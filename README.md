@@ -6,7 +6,8 @@
 
 | Date                       | Project                                                                                          |
 | -------------------------- | ------------------------------------------------------------------------------------------------ |
-| [2021.04.09] 1차 심화 과제 | [HTML, CSS, JS - Flex Panels 🖼](https://github.com/mnxmnz/SOPT-Web-Part/tree/master/Flex-Panels) |
+| [2021.04.09] 1차 심화 과제 | [HTML, CSS, JS - Flex Panels 🖼](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/Flex-Panels) |
+| [2021.04.09] 1차 조별 과제 | [CSS - animation 🤹‍♀️](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/CSS-Animation)          |
 
 #### 🔗 [SOPT Site](http://sopt.org/wp/)
 
