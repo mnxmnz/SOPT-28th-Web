@@ -6,19 +6,71 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0px;
+  padding: 20px 0px;
 }
 
+/* Dark Mode Toggle */
+
+body.dark {
+  background: #292c35;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border: 2px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 17px;
+  width: 50px;
+  transform: scale(1.5);
+  margin-bottom: 20px;
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(33px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+/* Paint CSS */
+
 .canvas {
-  width: 700px;
-  height: 700px;
+  width: 500px;
+  height: 500px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .controls {
-  margin-top: 80px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,6 +107,7 @@ body {
 .controls__colors .controls__color {
   width: 50px;
   height: 50px;
+  border: 2px solid white;
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);

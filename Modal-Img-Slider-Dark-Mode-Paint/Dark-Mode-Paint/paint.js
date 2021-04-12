@@ -6,7 +6,7 @@ const mode = document.getElementById('jsMode');
 const saveBtn = document.getElementById('jsSave');
 
 const INITIAL_COLOR = '2c2c2c';
-const CANVAS_SIZE = 700;
+const CANVAS_SIZE = 500;
 
 canvas.width = CANVAS_SIZE;
 canvas.height = CANVAS_SIZE;
@@ -41,18 +41,18 @@ const onMouseMove = event => {
   }
 };
 
-const handleColorClick = event => {
+const handleleColorClick = event => {
   const color = event.target.style.backgroundColor;
   ctx.strokeStyle = color;
   ctx.fillStyle = color;
 };
 
-const handleRangeChange = event => {
+const handleleRangeChange = event => {
   const size = event.target.value;
   ctx.lineWidth = size;
 };
 
-const handleModeClick = event => {
+const handleleModeClick = event => {
   if (filling === true) {
     filling = false;
     mode.innerText = 'Fill';
@@ -62,17 +62,17 @@ const handleModeClick = event => {
   }
 };
 
-const handleCanvasClick = () => {
+const handleleCanvasClick = () => {
   if (filling) {
     ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
   }
 };
 
-const handleCM = event => {
+const handleleCM = event => {
   event.preventDefault();
 };
 
-const handleSaveClick = () => {
+const handleleSaveClick = () => {
   const image = canvas.toDataURL();
   const link = document.createElement('a');
   link.href = image;
@@ -85,20 +85,20 @@ if (canvas) {
   canvas.addEventListener('mousedown', startPainting);
   canvas.addEventListener('mouseup', stopPainting);
   canvas.addEventListener('mouseleave', stopPainting);
-  canvas.addEventListener('click', handleCanvasClick);
-  canvas.addEventListener('contextmenu', handleCM);
+  canvas.addEventListener('click', handleleCanvasClick);
+  canvas.addEventListener('contextmenu', handleleCM);
 }
 
-Array.from(colors).forEach(color => color.addEventListener('click', handleColorClick));
+Array.from(colors).forEach(color => color.addEventListener('click', handleleColorClick));
 
 if (range) {
-  range.addEventListener('input', handleRangeChange);
+  range.addEventListener('input', handleleRangeChange);
 }
 
 if (mode) {
-  mode.addEventListener('click', handleModeClick);
+  mode.addEventListener('click', handleleModeClick);
 }
 
 if (saveBtn) {
-  saveBtn.addEventListener('click', handleSaveClick);
+  saveBtn.addEventListener('click', handleleSaveClick);
 }
