@@ -1,0 +1,202 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 10px;
+  font-size: 10px;
+  background: linear-gradient(180deg, rgba(240, 227, 255, 1) 0%, rgba(222, 195, 255, 1) 35%, rgba(207, 175, 255, 1) 100%);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #f4f9ff;
+  position: relative;
+}
+
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 1.5rem;
+}
+
+.clock .number1 {
+  --rotation: 30deg;
+}
+
+.clock .number2 {
+  --rotation: 60deg;
+}
+
+.clock .number3 {
+  --rotation: 90deg;
+}
+
+.clock .number4 {
+  --rotation: 120deg;
+}
+
+.clock .number5 {
+  --rotation: 150deg;
+}
+
+.clock .number6 {
+  --rotation: 180deg;
+}
+
+.clock .number7 {
+  --rotation: 210deg;
+}
+
+.clock .number8 {
+  --rotation: 240deg;
+}
+
+.clock .number9 {
+  --rotation: 270deg;
+}
+
+.clock .number10 {
+  --rotation: 300deg;
+}
+
+.clock .number11 {
+  --rotation: 330deg;
+}
+
+.clock .settings {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.clock .settings.second {
+  width: 2px;
+  height: 45%;
+  background-color: red;
+}
+
+.clock .settings.minute {
+  width: 5px;
+  height: 40%;
+  background-color: black;
+}
+
+.clock .settings.hour {
+  width: 8px;
+  height: 35%;
+  background-color: black;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 200px;
+  height: 200px;
+}
+
+.temperature {
+  width: 200px;
+}
+
+.temperature p {
+  padding: 0;
+  margin: 0;
+  color: #293251;
+  font-size: 6em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.temperature span {
+  color: #293251;
+  font-size: 0.7em;
+}
+
+.description p {
+  padding: 8px;
+  margin: 0;
+  color: #293251;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.location p {
+  margin: 0;
+  padding: 0;
+  color: #293251;
+  text-align: center;
+  font-size: 1em;
+}
+
+@media (max-width: 800px) {
+  *,
+  *::after,
+  *::before {
+    margin: 0 auto;
+  }
+
+  body {
+    display: block;
+  }
+
+  .clock {
+    margin-bottom: 20px;
+  }
+
+  .weather {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 350px;
+  }
+
+  .icon {
+    width: 280px;
+  }
+}

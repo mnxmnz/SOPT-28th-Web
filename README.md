@@ -4,11 +4,12 @@
 
 ### Web Part Seminar 💻
 
-| Date                       | Project                                                                                          |
-| -------------------------- | ------------------------------------------------------------------------------------------------ |
-| [2021.04.09] 1차 심화 과제 | [HTML, CSS, JS - Flex Panels 🖼](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/Flex-Panels) |
-| [2021.04.09] 1차 조별 과제 | [CSS - animation 🤹‍♀️](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/CSS-Animation)          |
-| [2021.04.25] 2차 기본 과제 | [JS, API - Paint 🎨](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/Paint)                  |
+| Date                       | Project                                                                                                                                          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [2021.04.09] 1차 심화 과제 | [HTML, CSS, JS - Flex Panels 🖼](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/Flex-Panels)                                                 |
+| [2021.04.09] 1차 조별 과제 | [CSS - Animation 🤹‍♀️](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/CSS-Animation)                                                          |
+| [2021.04.25] 2차 기본 과제 | [JS, API - Modal 🔳, Img Slider 🎞, Dark Mode 🌙, Paint 🎨](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/Modal-Img-Slider-Dark-Mode-Paint) |
+| [2021.04.25] 2차 심화 과제 | [JS, API - Clock 🕗, Calendar 📅, Weather ⛅](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/Clock-Calendar-Weather)                        |
 
 #### 🔗 [SOPT Site](http://sopt.org/wp/)
 

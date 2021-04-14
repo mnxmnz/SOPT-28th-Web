@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal & Img Slider</title>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  </head>
+  <body>
+    <div id="modal">
+      <div id="modal-contents">
+        <h2>Modal 제목</h2>
+        <p>Modal 내용</p>
+        <button type="button" id="modal-close">Modal 닫기</button>
+      </div>
+    </div>
+    <div class="container modal">
+      <div class="background">
+        <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg" class="bg" />
+        <img src="https://cdn.pixabay.com/photo/2016/10/31/14/55/rottweiler-1785760_960_720.jpg" class="bg" />
+        <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794__340.jpg" class="bg" />
+        <img src="https://cdn.pixabay.com/photo/2019/08/07/14/10/dog-4390884__340.jpg" class="bg" />
+        <img src="https://cdn.pixabay.com/photo/2020/05/03/13/09/puppy-5124947__340.jpg" class="bg" />
+      </div>
+      <div class="slider-container">
+        <div>
+          <div>
+            <div class="slider">
+              <div class="img" id="first">
+                <img src="https://cdn.pixabay.com/photo/2020/05/03/13/09/puppy-5124947__340.jpg" />
+              </div>
+              <div class="img">
+                <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg" />
+              </div>
+              <div class="img">
+                <img src="https://cdn.pixabay.com/photo/2016/10/31/14/55/rottweiler-1785760_960_720.jpg" />
+              </div>
+              <div class="img">
+                <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794__340.jpg" />
+              </div>
+              <div class="img">
+                <img src="https://cdn.pixabay.com/photo/2019/08/07/14/10/dog-4390884__340.jpg" />
+              </div>
+              <div class="img">
+                <img src="https://cdn.pixabay.com/photo/2020/05/03/13/09/puppy-5124947__340.jpg" />
+              </div>
+              <div class="img" id="last">
+                <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <button class="btn" id="prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="btn" id="next"><i class="fas fa-chevron-right"></i></button>
+        <ul>
+          <li class="option" op-index="0"></li>
+          <li class="option" op-index="1"></li>
+          <li class="option" op-index="2"></li>
+          <li class="option" op-index="3"></li>
+          <li class="option" op-index="4"></li>
+        </ul>
+      </div>
+    </div>
+    <script src="modal.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>
