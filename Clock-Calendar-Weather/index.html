@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clock Weather</title>
     <link rel="stylesheet" href="./style.css" />
-  </head>
   <body>
     <div class="clock">
       <div class="settings hour js-hour"></div>
@@ -24,25 +23,45 @@
       <div class="number number11">11</div>
       <div class="number number12">12</div>
     </div>
-    <div class="weather js-weather">
-      <div class="icon-container">
-        <div class="icon js-icon">
-          <img src="icons/unknown.png" alt="" />
+    <div class="calendar">
+      <div class="month">
+        <div class="date">
+          <p></p>
         </div>
       </div>
-      <div class="description-container">
-        <div class="temperature js-temperature">
+      <div class="weekdays">
+        <div>일</div>
+        <div>월</div>
+        <div>화</div>
+        <div>수</div>
+        <div>목</div>
+        <div>금</div>
+        <div>토</div>
+      </div>
+      <div class="days"></div>
+    </div>
+    <div class="weather">
+      <div class="app-title">
+        <p>Weather</p>
+      </div>
+      <div class="notification"></div>
+      <div class="weather-container">
+        <div class="weather-icon">
+          <img src="icons/unknown.png" alt="" />
+        </div>
+        <div class="temperature-value">
           <p>- °<span>C</span></p>
         </div>
-        <div class="description js-description">
+        <div class="temperature-description">
           <p>-</p>
         </div>
-        <div class="location js-location">
+        <div class="location">
           <p>-</p>
         </div>
       </div>
     </div>
     <script src="./clock.js"></script>
+    <script src="./calendar.js"></script>
     <script src="./weather.js"></script>
   </body>
 </html>

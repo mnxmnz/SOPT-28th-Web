@@ -122,48 +122,142 @@ body {
   background-color: black;
 }
 
-.weather {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon {
+.calendar {
   width: 300px;
+  height: 350px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.month {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(207, 175, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.month p {
+  font-size: 25px;
+}
+
+.weekdays {
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(300px / 7);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.icon img {
-  width: 200px;
-  height: 200px;
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.temperature {
-  width: 200px;
+.days div {
+  font-size: 15px;
+  width: calc(300px / 7);
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.temperature p {
+.today {
+  background-color: rgba(207, 175, 255, 1);
+  border-radius: 10px;
+}
+
+.weather {
+  width: 300px;
+  background-color: #fff;
+  display: block;
+  border-radius: 10px;
+  padding-bottom: 50px;
+}
+
+.app-title {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+.app-title p {
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: #293251;
+}
+
+.notification {
+  background-color: #f8d7da;
+  display: none;
+}
+
+.notification p {
+  color: #721c24;
+  font-size: 1.2em;
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.weather-container {
+  width: 300px;
+  height: 260px;
+  background-color: #f4f9ff;
+}
+
+.weather-icon {
+  width: 300px;
+  height: 128px;
+}
+
+.weather-icon img {
+  display: block;
+  margin: 0 auto;
+}
+
+.temperature-value {
+  width: 300px;
+  height: 60px;
+}
+
+.temperature-value p {
   padding: 0;
   margin: 0;
   color: #293251;
-  font-size: 6em;
+  font-size: 4em;
   text-align: center;
   cursor: pointer;
 }
 
-.temperature span {
+.temperature-value span {
   color: #293251;
-  font-size: 0.7em;
+  font-size: 0.5em;
 }
 
-.description p {
+.temperature-description p {
   padding: 8px;
   margin: 0;
   color: #293251;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .location p {
@@ -171,7 +265,7 @@ body {
   padding: 0;
   color: #293251;
   text-align: center;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 @media (max-width: 800px) {
