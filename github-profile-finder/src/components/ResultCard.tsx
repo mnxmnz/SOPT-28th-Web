@@ -1,27 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function ResultCard() {
+function ResultCard({ data }) {
   return (
     <StyledResultCardWrap>
       <StyledPhoto>
         <p>PHOTO</p>
+        {data.avatar_url}
       </StyledPhoto>
       <StyledName>
         <p>NAME</p>
+        {data.name}
       </StyledName>
       <StyledId>
         <p>ID</p>
+        {data.login}
       </StyledId>
       <StyledBio>
         <p>BIO</p>
+        {data.bio}
       </StyledBio>
       <StyledUser>
         <StyledFollowers>
           <p>Followers</p>
+          {data.followers}
         </StyledFollowers>
         <StyledFollowing>
           <p>Following</p>
+          {data.following}
         </StyledFollowing>
       </StyledUser>
     </StyledResultCardWrap>
