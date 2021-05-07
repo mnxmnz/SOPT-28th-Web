@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 type SearchBarProps = {
-  // eslint-disable-next-line no-unused-vars
   onSubmit: (userId: string) => void;
 };
 

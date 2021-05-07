@@ -24,7 +24,12 @@ function Result() {
 
   switch (status) {
     case 'pending':
-      return <div style={{ color: 'white', fontSize: '24px' }}>Loading...</div>;
+      return (
+        <>
+          <SearchBar onSubmit={onSubmit} />
+          <div style={{ color: 'white', fontSize: '24px' }}>Loading...</div>;
+        </>
+      );
     case 'resolved':
       return (
         <>
@@ -33,10 +38,19 @@ function Result() {
         </>
       );
     case 'rejected':
-      return <div style={{ color: 'white', fontSize: '24px' }}>User Not Found</div>;
+      return (
+        <>
+          <SearchBar onSubmit={onSubmit} />
+          <div style={{ color: 'white', fontSize: '24px' }}>User Not Found</div>;
+        </>
+      );
     case 'idle':
     default:
-      return <div></div>;
+      return (
+        <>
+          <SearchBar onSubmit={onSubmit} />
+        </>
+      );
   }
 }
 
