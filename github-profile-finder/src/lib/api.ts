@@ -1,5 +1,10 @@
 import axios from 'axios';
 
-export const client = axios.create({
-  baseURL: 'https://api.github.com/users',
-});
+export const getUserData = async (userId: string) => {
+  try {
+    const { data } = await axios.get('https://api.github.com/users' + userId);
+    return data;
+  } catch (e) {
+    return null;
+  }
+};

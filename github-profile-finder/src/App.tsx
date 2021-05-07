@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchBar from './components/SearchBar';
+import ResultCard from './components/ResultCard';
 
 function App() {
   const onSubmit = (userId: string) => {
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <SearchBar onSubmit={onSubmit} />
+      <ResultCard />
     </>
   );
 }

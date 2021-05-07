@@ -2,10 +2,11 @@ import { DefaultTheme } from 'styled-components';
 
 const theme: DefaultTheme = {
   colors: {
-    background: '#1e272e;',
-    card: '#808e9b;',
-    button: '#485460;',
-    text: '#d2dae2;',
+    background: '#ecf0f1;',
+    card: '#778beb;',
+    button: '#3498db;',
+    text: '#2f3542;',
+    border: '#130f40',
   },
 };
 
