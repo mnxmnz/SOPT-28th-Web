@@ -10,6 +10,7 @@
 | [2021.04.25] 2차 기본 과제        | [JS, API - Modal 🔳, Dark Mode 🌙, Paint 🎨](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/Modal-Dark-Mode-Paint)   |
 | [2021.04.25] 2차 기본 + 심화 과제 | [JS, API - Clock 🕗, Calendar 📅, Weather ⛅](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/Clock-Calendar-Weather) |
 | [2021.05.07] 3차 기본 + 심화 과제 | [React, TS - Github Profile Finder 🔍](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/github-profile-finder)         |
+| [2021.05.19] 4차 기본 과제        | [React, TS - Diary 📝](https://github.com/mnxmnz/SOPT-28th-Web/tree/master/diary)                                         |
 
 #### 🔗 [SOPT Site](http://sopt.org/wp/)
 
