@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { RouteComponentProps, withRouter } from 'react-router-dom';
 
-function Title() {
-  const title = '오늘의 일기';
+function Title({ history }: RouteComponentProps<{}>) {
+  const title = history.location.pathname === '/' ? '이번 달 일기' : '오늘의 일기';
   return <TitleWrap>{title}</TitleWrap>;
 }
 
@@ -14,4 +15,4 @@ const TitleWrap = styled.div`
   align-items: center;
 `;
 
-export default Title;
+export default withRouter(Title);
