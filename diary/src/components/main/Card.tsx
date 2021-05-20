@@ -38,10 +38,9 @@ const CardWrap = styled.div`
 `;
 
 const Image = styled.div`
-  width: 2.2rem;
   height: 14.8rem;
   border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1rem.5rem;
+  border-top-right-radius: 1.5rem;
   background-color: ${({ theme }) => theme.colors.gray_01};
   display: flex;
   justify-content: center;
@@ -49,7 +48,6 @@ const Image = styled.div`
 `;
 
 const UserImg = styled.img`
-  width: 2.2rem;
   height: 14.8rem;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1rem.5rem;

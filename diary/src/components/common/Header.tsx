@@ -10,7 +10,7 @@ function MainHeader() {
       <HeaderWrap>
         <Menu />
         <Link to="/">
-          <div>Diary App</div>
+          <div>Diary</div>
         </Link>
         <Profile />
       </HeaderWrap>

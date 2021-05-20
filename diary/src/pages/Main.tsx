@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
 import Card from '../components/main/Card';
 import NewCard from '../components/main/NewCard';
 import { getCardData } from '../lib/api';
+import { IData } from '../types';
 
-function Main(year: number, month: number) {
-  const [userData, setUserData] = useState({
-    id: 1,
-    date: 20210501,
-    title: '다이어리 제목 테스트',
-    image: '',
-    weather: '맑음',
-    tags: ['테스트 태그'],
-  });
+function Main() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = now.getMonth();
+
+  const [userData, setUserData] = useState([]);
 
   useEffect(() => {
     (async () => {
@@ -22,13 +21,21 @@ function Main(year: number, month: number) {
 
   return (
     <>
-      {userData &&
-        userData.map((data: any, index: number) => {
-          return <Card key={index} userData={data} />;
-        })}
+      <MainWrap>
+        {userData &&
+          userData.map((data: IData, index: number) => {
+            return <Card key={index} userData={data} />;
+          })}
+      </MainWrap>
       <NewCard />
     </>
   );
 }
+
+const MainWrap = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  row-gap: 2.5rem;
+`;
 
 export default Main;

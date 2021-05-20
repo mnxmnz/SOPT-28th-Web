@@ -69,6 +69,12 @@ const MonthWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 6rem;
+  text-align: center;
+
+  & > div {
+    width: 5rem;
+    font-size: 1.8rem;
+  }
 
   & > div:hover {
     font-size: 2.2rem;
