@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { IData } from '../types';
 
-function ResultCard({ data }) {
+function ResultCard({ data }: IData) {
   return (
     <StyledResultCardWrap>
       <StyledPhoto>
@@ -35,72 +36,72 @@ function ResultCard({ data }) {
 }
 
 const StyledResultCardWrap = styled.div`
-  width: 760px;
-  height: 500px;
-  border-radius: 10px;
-  margin-top: 30px;
-  padding: 10px;
-  font-size: 15px;
+  width: 76rem;
+  height: 50rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  padding: 1rem;
+  font-size: 1.5rem;
   background-color: ${({ theme }) => theme.colors.card};
 
   p {
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 2rem;
   }
 `;
 
 const StyledPhoto = styled.div`
-  width: 300px;
-  height: 300px;
-  border: none 1px;
+  width: 30rem;
+  height: 30rem;
+  border: none 0.1rem;
   display: flex;
   align-items: center;
 `;
 
 const StyledName = styled.div`
-  width: 300px;
-  height: 40px;
-  border: none 1px;
+  width: 30rem;
+  height: 4rem;
+  border: none 0.1rem;
   display: flex;
   align-items: center;
-  padding: 3px;
+  padding: 0.3rem;
 `;
 
 const StyledId = styled.div`
-  width: 300px;
-  height: 40px;
-  border: none 1px;
+  width: 30rem;
+  height: 4rem;
+  border: none 0.1rem;
   display: flex;
   align-items: center;
-  padding: 3px;
+  padding: 0.3rem;
 `;
 
 const StyledBio = styled.div`
-  width: 300px;
-  height: 70px;
-  border: none 1px;
+  width: 30rem;
+  height: 7rem;
+  border: none 0.1rem;
   display: flex;
   align-items: center;
-  padding: 3px;
+  padding: 0.3rem;
 `;
 
 const StyledUser = styled.div`
-  width: 300px;
-  height: 40px;
-  border: none 1px;
+  width: 30rem;
+  height: 4rem;
+  border: none 0.1rem;
   display: flex;
   align-items: center;
-  padding: 3px;
+  padding: 0.3rem;
 `;
 
 const StyledFollowers = styled.div`
-  width: 150px;
-  padding: 3px;
+  width: 15rem;
+  padding: 0.3rem;
 `;
 
 const StyledFollowing = styled.div`
-  width: 150px;
-  padding: 3px;
+  width: 15rem;
+  padding: 0.3rem;
 `;
 
 export default ResultCard;

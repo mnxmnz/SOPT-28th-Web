@@ -35,20 +35,20 @@ const StyledSearchBarWrap = styled.div`
 `;
 
 const StyledTitle = styled.div`
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: bold;
   color: ${({ theme }) => theme.colors.border};
 `;
 
 const StyledForm = styled.form`
   display: flex;
-  padding-left: 50px;
-  font-size: 15px;
+  padding-left: 5rem;
+  font-size: 1.5rem;
 `;
 
 const StyledInput = styled.input`
-  width: 330px;
-  border-radius: 10px;
+  width: 33rem;
+  border-radius: 1rem;
   border-color: ${({ theme }) => theme.colors.border};
   background-color: none;
 
@@ -58,9 +58,9 @@ const StyledInput = styled.input`
 `;
 
 const StyledButton = styled.button`
-  width: 65px;
-  margin-left: 10px;
-  border-radius: 10px;
+  width: 6.5rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
   border-color: ${({ theme }) => theme.colors.text};
   background-color: none;
 `;

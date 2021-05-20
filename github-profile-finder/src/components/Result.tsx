@@ -6,7 +6,7 @@ import { getUserData } from '../lib/api';
 function Result() {
   const [userState, setUserState] = useState({
     status: 'idle',
-    data: null,
+    data: null as any,
   });
 
   const { status, data } = userState;
@@ -27,7 +27,7 @@ function Result() {
       return (
         <>
           <SearchBar onSubmit={onSubmit} />
-          <div style={{ color: 'white', fontSize: '24px' }}>Loading...</div>;
+          <div style={{ color: 'white', fontSize: '2.4rem' }}>Loading...</div>;
         </>
       );
     case 'resolved':
@@ -41,7 +41,7 @@ function Result() {
       return (
         <>
           <SearchBar onSubmit={onSubmit} />
-          <div style={{ color: 'white', fontSize: '24px' }}>User Not Found</div>;
+          <div style={{ color: 'white', fontSize: '2.4rem' }}>User Not Found</div>;
         </>
       );
     case 'idle':
