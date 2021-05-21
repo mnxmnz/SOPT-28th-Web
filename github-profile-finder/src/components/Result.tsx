@@ -1,56 +1,32 @@
-import React, { useState } from 'react';
-import SearchBar from './SearchBar';
+import React from 'react';
+import { IUser } from '../types';
 import ResultCard from './ResultCard';
-import { getUserData } from '../lib/api';
 
-function Result() {
-  const [userState, setUserState] = useState({
-    status: 'idle',
-    data: null as any,
-  });
-
+function Result({ userState }: IUser) {
   const { status, data } = userState;
-
-  const onSubmit = async (userId: string) => {
-    setUserState({ ...userState, status: 'pending' });
-    try {
-      const data = await getUserData(userId);
-      if (data === null) throw Error;
-      setUserState({ status: 'resolved', data: data });
-    } catch (e) {
-      setUserState({ status: 'rejected', data: null });
-    }
-  };
 
   switch (status) {
     case 'pending':
       return (
         <>
-          <SearchBar onSubmit={onSubmit} />
           <div style={{ color: 'white', fontSize: '2.4rem' }}>Loading...</div>;
         </>
       );
     case 'resolved':
       return (
         <>
-          <SearchBar onSubmit={onSubmit} />
           <ResultCard data={data} />
         </>
       );
     case 'rejected':
       return (
         <>
-          <SearchBar onSubmit={onSubmit} />
           <div style={{ color: 'white', fontSize: '2.4rem' }}>User Not Found</div>;
         </>
       );
     case 'idle':
     default:
-      return (
-        <>
-          <SearchBar onSubmit={onSubmit} />
-        </>
-      );
+      return <></>;
   }
 }
 

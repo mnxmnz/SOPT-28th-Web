@@ -1,12 +1,8 @@
 import React from 'react';
-import Result from './components/Result';
+import Main from './pages/Main';
 
 function App() {
-  return (
-    <>
-      <Result />
-    </>
-  );
+  return <Main />;
 }
 
 export default App;

@@ -37,7 +37,7 @@ const StyledSearchBarWrap = styled.div`
 const StyledTitle = styled.div`
   font-size: 3rem;
   font-weight: bold;
-  color: ${({ theme }) => theme.colors.border};
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 const StyledForm = styled.form`
